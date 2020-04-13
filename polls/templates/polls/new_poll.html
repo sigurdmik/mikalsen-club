@@ -1,0 +1,16 @@
+{% include "../home/navbar.html" %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/home/style.css' %}">
+
+{% block main %}
+<form method="POST">
+
+    <div class="form-group">
+        <label for="question">Enter Poll Question</label>
+        {{ form.question_text }}
+    </div>
+    <button type="submit">Submit</button>
+
+</form>
+{% endblock %}

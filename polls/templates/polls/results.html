@@ -1,0 +1,19 @@
+{% include "../home/navbar.html" %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+
+<div class="polls_placeholder">
+    <h1>{{ question.question_text }}</h1>
+
+    <div id="polls_results">
+    {% for choice in question.choice_set.all %}
+        {{ choice.choice_text }} --  {{ choice.votes }} vote{{ choice.votes|pluralize }} <br>
+    {% endfor %}
+    </div>
+    <br>
+
+    <button><a href="{% url 'polls:detail' question.id %}">Vote again?</a></button> 
+    <button><a href="/polls">Back</a></button>
+
+</div>

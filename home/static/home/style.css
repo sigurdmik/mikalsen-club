@@ -1,0 +1,26 @@
+.innhold {
+    width: 100%;
+    text-align: center;
+}
+
+.polls_placeholder {
+    padding: none;
+    margin: none;
+    width: 25%;
+    margin-left: 37.5%;
+    text-align: center;
+} 
+
+.polls_placeholder h1 {
+    text-decoration-line: underline;
+}
+
+.polls_placeholder a {
+    color: black;
+}
+
+#post_poll{
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
